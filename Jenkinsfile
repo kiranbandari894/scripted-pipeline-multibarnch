@@ -1,12 +1,12 @@
 node{
   if(env.BRANCH_NAME == "master"){
      stage("BuldingMaster")"{
-         echo "bulding ${env.BRANCH_NAME}" 
+         echo 'bulding master branch'
      }
   }
   if(env.BRANCH_NAME == "dev"){
          stage("BuldingDEV")"{
-         echo "bulding ${env.BRANCH_NAME}" 
+         echo "bulding dev branch" 
      }
   }
 }
